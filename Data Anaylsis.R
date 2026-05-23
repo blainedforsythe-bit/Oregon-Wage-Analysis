@@ -19,6 +19,7 @@ wages_clean <- wages %>%
 
 # pulling CPI from FRED to adjust for inflation
 # using 2019 as base year since thats pre-pandemic
+# you'll need your own free API key from fred.stlouisfed.org to run it
 fredr_set_key("your_api_key_here")
 
 cpi <- fredr(
